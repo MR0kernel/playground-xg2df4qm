@@ -1,16 +1,12 @@
-# Welcome!
-
-This C template lets you get started quickly with a simple one-page playground.
-
-```C runnable
 #include <stdio.h>
-
-int main() {
-	printf("Hello World!");
+int main(void)
+{
+    int i = 0;
+    char *t = "hello world";
+    while(t[i] != '\0')
+    {
+        i++;
+    }
+    write(1,t,i);
+    return(0);
 }
-
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), see the [official documentation](https://tech.io/playgrounds/408/tech-io-documentation).
